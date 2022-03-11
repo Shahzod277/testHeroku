@@ -24,14 +24,14 @@ public class UserRequestMapper implements Mapper<UserRequest, User> {
     public User mapFrom(UserRequest userRequestDto) {
 
         User user = new User();
-      //  user.setUsername(userRequestDto.getUsername());
-   //     user.setEmail(userRequestDto.getEmail());
+        user.setUsername(userRequestDto.getUsername());
+        user.setEmail(userRequestDto.getEmail());
         user.setPassword(passwordEncoder.encode(userRequestDto.getPassword()));
         user.setUserProfile(UserProfile.builder()
                 .firstname(userRequestDto.getProfile().getFirstname())
                 .lastname(userRequestDto.getProfile().getLastname())
                 .birthDate(userRequestDto.getProfile().getBirthDate())
-          //      .phoneNumber(userRequestDto.getProfile().getPhoneNumber())
+                .phoneNumber(userRequestDto.getProfile().getPhoneNumber())
                 .passportData(userRequestDto.getProfile().getPassportData())
                 .gender(userRequestDto.getProfile().getGender())
                 .build()
