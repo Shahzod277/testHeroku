@@ -111,7 +111,7 @@ public class AdminUserServiceImpl implements UserService {
                 role.setUsers(new ArrayList<>());
                 user.addRole(role);
             }
-//            roleRepository.save(role);
+            roleRepository.save(role);
         });
     }
 }
