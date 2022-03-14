@@ -17,13 +17,13 @@ import java.util.Objects;
 @AllArgsConstructor
 public class Student extends AbstractData<Integer> {
 
-    @Column(nullable = false)
+
     private String firstname;
 
-    @Column(nullable = false)
+
     private String fatherName;
 
-    @Column(nullable = false)
+
     private String lastname;
 
     @OneToOne
