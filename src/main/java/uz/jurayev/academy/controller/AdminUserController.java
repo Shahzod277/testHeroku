@@ -12,6 +12,7 @@ import uz.jurayev.academy.service.impl.AdminUserServiceImpl;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/user")
+@CrossOrigin
 public class AdminUserController {
 
     private final AdminUserServiceImpl userService;

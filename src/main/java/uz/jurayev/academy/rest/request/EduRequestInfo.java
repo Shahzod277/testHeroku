@@ -7,8 +7,6 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class EduRequestInfo {
-
-    private Integer id;
     private String category;
     private String level;
     private String description;
