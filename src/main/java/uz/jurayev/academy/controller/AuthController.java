@@ -25,7 +25,6 @@ import java.util.stream.Collectors;
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 @CrossOrigin
-
 public class AuthController {
 
     private final AuthenticationManager authenticationManager;
