@@ -14,6 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/admin/api/tutor")
 @RequiredArgsConstructor
+@CrossOrigin
 public class AdminTutorController {
 
     private final AdminTutorServiceImpl adminService;

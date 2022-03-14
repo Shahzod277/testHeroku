@@ -13,6 +13,7 @@ import uz.jurayev.academy.service.impl.AdminUserServiceImpl;
 @RestController
 @RequestMapping("/api/user")
 @CrossOrigin
+
 public class AdminUserController {
 
     private final AdminUserServiceImpl userService;

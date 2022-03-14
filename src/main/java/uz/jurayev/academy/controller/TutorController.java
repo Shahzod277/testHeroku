@@ -12,6 +12,7 @@ import java.security.Principal;
 @RestController
 @RequestMapping("/api/tutor")
 @RequiredArgsConstructor
+@CrossOrigin
 public class TutorController {
 
     private final TutorServiceImpl tutorService;
